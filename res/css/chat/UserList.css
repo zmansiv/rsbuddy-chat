@@ -1,0 +1,84 @@
+.user-box #title {
+    -fx-background-image: url("../../images/chat/user-title-left.png"), url("../../images/chat/user-title-bg.png");
+    -fx-background-insets: 0, 0 0 0 6;
+    -fx-background-size: 6px 28px, auto 28px;
+    -fx-background-repeat: no-repeat, repeat-x;
+    -fx-alignment: center;
+    -fx-padding: 0 6 0 6;
+}
+
+.user-box #lebel {
+    -fx-font: bold 14pt calibri, sans-serif;
+    -fx-text-fill: rgb(119, 119, 119);
+    -fx-translate-x: 1;
+    -fx-translate-y: 2;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-image: null;
+    -fx-background-position: center, bottom;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-image: null;
+    -fx-background-position: bottom;
+    -fx-background-repeat: repeat-x;
+    -fx-border-width: 0;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: rgb(50, 50, 50);
+}
+
+.list-view .list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.user-label {
+    -fx-background-color: transparent;
+    -fx-background-position: left;
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: rgb(124, 124, 124);
+    -fx-text-alignment: left center;
+    -fx-padding: 0 0 0 14;
+}
+
+.user-label .text {
+    -fx-translate-y: -1;
+}
+
+#owner-label {
+    -fx-background-image: url("../../images/chat/users/user-owner.png");
+}
+
+#protect-label {
+    -fx-background-image: url("../../images/chat/users/user-admin.png");
+}
+
+#op-label {
+    -fx-background-image: url("../../images/chat/users/user-op.png");
+}
+
+#halfop-label {
+    -fx-background-image: url("../../images/chat/users/user-halfop.png");
+}
+
+#voice-label {
+    -fx-background-image: url("../../images/chat/users/user-voice.png");
+}
+
+#regular-label {
+    -fx-background-image: url("../../images/chat/users/user-reg.png");
+}
+
+.list-view {
+    -fx-padding: 4;
+    -fx-border-color: rgb(45, 45, 45), linear-gradient(rgb(30, 30, 30), rgb(16, 16, 16));
+    -fx-border-width: 1 0 0 0, 0 1 0 0;
+}
+
+.list-view:focused {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}

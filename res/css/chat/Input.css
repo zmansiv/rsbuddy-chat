@@ -1,0 +1,23 @@
+#input-box {
+    -fx-background-image: url("../../images/chat/input-pane-bg.png");
+    -fx-background-repeat: repeat-x;
+    -fx-padding: 0 4 0 5;
+}
+
+#send .button {
+    -fx-alignment: center;
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+    -fx-background-image: url("../../images/chat/send_norm.png");
+    -fx-background-repeat: no-repeat;
+	-fx-border-radius: 0;
+	-fx-background-radius: 0;
+}
+
+#send .button:hover {
+    -fx-background-image: url("../../images/chat/send_highlight.png");
+}
+
+#send .button:pressed {
+    -fx-background-image: url("../../images/chat/send_pressed.png");
+}
