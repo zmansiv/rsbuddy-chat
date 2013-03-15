@@ -161,7 +161,7 @@ public class Connection implements Runnable {
 
 	private void writeLine(String rawLine) {
 		try {
-			System.out.println("(out) " + rawLine);
+			//System.out.println("(out) " + rawLine);
 			out.write(rawLine + "\r\n");
 			out.flush();
 		} catch (IOException e) {
@@ -173,7 +173,7 @@ public class Connection implements Runnable {
 	public String readLine() {
 		try {
 			String s = in.readLine();
-			System.out.println(" (in) " + s);
+			//System.out.println(" (in) " + s);
 			return s;
 		} catch (IOException e) {
 			if (exceptionHandler != null)
